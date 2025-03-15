@@ -64,11 +64,11 @@ cat url.txt | saxss > output.txt
   - Tests each parameter with sabdop.
   - If sabdop is not reflected, logs "Not reflected" and skips to the next URL.
    ### Special Character Testing:
-   - If sabdop is reflected, tests special characters by appending them (e.g., sabdop<, sabdop>).
-   - Uses parallel processing with the -d flag to speed up checks.
+  - If sabdop is reflected, tests special characters by appending them (e.g., sabdop<, sabdop>).
+  - Uses parallel processing with the -d flag to speed up checks.
   ### Custom Payload Testing:
-  Tests the custom payload by appending it to sabdop (e.g., sabdopscript>alert('xss')</script>).
-      - Reports reflection status.
+  - Tests the custom payload by appending it to sabdop (e.g., sabdopscript>alert('xss')</script>).
+  - Reports reflection status.
   ### Output:
   - Displays results in the terminal with colored output (green for success, red for errors, yellow for warnings, blue for headers).
   - Saves results to the specified output file (stripping colors) or processed.txt on interruption.
